@@ -3,6 +3,7 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import pets.Dog;
 
@@ -14,6 +15,11 @@ public class PostStepDefinitions {
     private Dog dog;
     private Response response;
 
+    @Given("The base URL for the API is set")
+    public void theBaseURLForTheAPIIsSet() {
+        RestAssured.baseURI = "https://petstore3.swagger.io/api/v3";
+    }
+
     @Given("There is a new pet to add with id {int}")
     public void iHaveTheFollowingPetDetails(int id) {
         dog = Dog.generateRandomDog(id);
@@ -23,7 +29,6 @@ public class PostStepDefinitions {
     public void iSendARequestToCreateThePet() {
 
         response = given()
-                .baseUri("https://petstore3.swagger.io/api/v3")
                 .header("accept", "application/xml")
                 .header("Content-Type", "application/json")
                 .body(dog.toJson())

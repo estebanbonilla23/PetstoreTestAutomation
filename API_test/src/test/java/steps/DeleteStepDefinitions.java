@@ -14,7 +14,6 @@ public class DeleteStepDefinitions {
 
     @Given("I have a pet with id {int} that I want to delete")
     public void iHaveAPetWithIdThatIWantToDelete(Integer petId) {
-        RestAssured.baseURI = "https://petstore3.swagger.io/api/v3";
         RestAssured.basePath = "/pet/{id}";
         id = petId;
     }

@@ -14,7 +14,6 @@ public class GetStepDefinitions {
 
     @Given("I have a pet with id {int}")
     public void iHaveAPetWithId(Integer petId) {
-        RestAssured.baseURI = "https://petstore3.swagger.io/api/v3";
         RestAssured.basePath = "/pet/{id}";
         response = RestAssured.given()
                 .pathParam("id", petId)
@@ -33,9 +32,9 @@ public class GetStepDefinitions {
         assertEquals(200, response.getStatusCode(), "The request should be successful");
     }
 
-    @Then("I should see the pet's ID in the response")
+    @Then("I should see the pet's id in the response")
     public void iShouldSeeThePetsIdInTheResponse() {
         String responseBody = response.getBody().asString();
-        assertTrue(responseBody.contains("<id>10</id>"), "The pet ID 10 should be in the response");
+        assertTrue(responseBody.contains("<id>10</id>"), "The pet id should be in the response");
     }
 }
