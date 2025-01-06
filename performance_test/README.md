@@ -51,7 +51,7 @@ Update the `locustfile.py` file if needed to adjust headers, payloads, or endpoi
 ### **Run Locust**
 1. Start Locust from the project directory:
    ```bash
-   locust -f locustfile.py --host=https://petstore3.swagger.io/api/v3
+   python -m locust -f locustfile.py --host=https://petstore3.swagger.io/api/v3
    ```
 
 2. Open the Locust web interface by navigating to:
