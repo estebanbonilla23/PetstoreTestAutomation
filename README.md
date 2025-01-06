@@ -1,37 +1,23 @@
-# Petstore API Test Automation
+# Petstore API Testing Suite
 
-This project is designed for automating tests on the Petstore API using **Rest Assured**, **Cucumber**, and **JUnit**. It focuses on testing the RESTful API endpoints, validating JSON responses, and ensuring the correctness of the service.
+This repository contains automated testing projects for the Petstore API. It is organized into different testing areas:
 
-## Table of Contents
-- [Technologies Used](#technologies-used)
-- [Project Setup](#project-setup)
-- [Dependencies](#dependencies)
-- [Running Tests](#running-tests)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- **API Testing**: Automated tests for verifying API functionality and correctness.
+- **Performance Testing**: Performance tests using Locust to simulate user behaviors and evaluate API performance under load.
 
-## Technologies Used
-- **Java 8**: The project is built using Java 1.8.
-- **Gradle**: The project uses Gradle as the build automation tool.
-- **Rest Assured**: For API testing and validation of RESTful responses.
-- **Cucumber**: For Behavior-Driven Development (BDD) testing, allowing us to write tests in Gherkin syntax.
-- **JUnit 5**: The testing framework used for running the tests.
-- **Gson**: For converting Java objects to JSON format.
+## Folder Structure
+- **API_Test**: Contains automation tests for validating the Petstore API using Rest Assured, Cucumber, and JUnit.
+- **performance_test**: Contains performance testing scripts using Locust.
 
-## Project Setup
+## Getting Started
+To get started with each project, please refer to the individual README files within their respective folders for detailed setup instructions, technologies used, and running tests.
 
-To set up the project locally, follow these steps:
+- [API Testing README](./API_Test/README.md)
+- [Performance Testing README](./performance_test/README.md)
 
-1. **Clone the Repository**
-2. **Install Gradle**
+## Next Steps
+- Clone the repository.
+- Choose the area you are interested in (API or Performance).
+- Follow the setup instructions in the relevant README.
 
-If you don't have Gradle installed, you can download it from the official website: https://gradle.org/install/
-
-3. **Build the Project**
-
-./gradlew build
-
-4. **Run Tests**
-
-./gradlew test
+If you encounter any issues or need further information, consult the corresponding README or feel free to open an issue.
