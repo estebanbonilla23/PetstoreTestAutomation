@@ -7,12 +7,12 @@ This repository contains automated testing projects for the Petstore API. It is 
 
 ## Folder Structure
 - **API_Test**: Contains automation tests for validating the Petstore API using Rest Assured, Cucumber, and JUnit with Java.
-- **performance_test**: Contains performance testing scripts using Locust with python.
+- **performance_test**: Contains performance testing scripts using Locust with Python.
 
 ## Getting Started
 To get started with each project, please refer to the individual README files within their respective folders for detailed setup instructions, technologies used, and running tests.
 
-- [API Testing README](./API_Test/README.md)
+- [API Testing README](./API_test/README.md)
 - [Performance Testing README](./performance_test/README.md)
 
 ## Next Steps
