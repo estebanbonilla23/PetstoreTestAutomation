@@ -5,11 +5,6 @@ This project is designed for automating tests on the Petstore API using **Rest A
 ## Table of Contents
 - [Technologies Used](#technologies-used)
 - [Project Setup](#project-setup)
-- [Dependencies](#dependencies)
-- [Running Tests](#running-tests)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Technologies Used
 - **Java 8**: The project is built using Java 1.8.
